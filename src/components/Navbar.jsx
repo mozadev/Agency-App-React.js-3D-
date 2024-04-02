@@ -7,7 +7,7 @@ import { logo, menu, close } from '../assets';
 
 const Navbar = () => {
   const [active, SetActive] = useState("");
-  const [toggle, Settoggle] = useState(false);
+  const [toggle, SetToggle] = useState(false);
 
   return (
     <nav
@@ -27,7 +27,7 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-9
           h-9 object-contain' />
           <p className='text-green text-[18px]
-          font-bold cursor-pointer flex'> Cesar <span
+          font-bold cursor-pointer flex'> Cesar &nbsp; <span
               className='sm:block hidden'> | Backend
               Developer
             </span>
@@ -56,7 +56,7 @@ const Navbar = () => {
             alt='menu'
             className='w-[28px] h-[28px]
             object-container cursor-pointer'
-            onClick={() => Settoggle(!toggle)}
+            onClick={() => SetToggle(!toggle)}
           />
 
           <div className={`${!toggle ? "hidden"
@@ -74,8 +74,11 @@ const Navbar = () => {
                     : "text-secondary"
                     } font-poppins font-medium
                     cursor-pointer text-[16px]`}
-                  onClick={() => SetActive(link.title)}
-
+                  onClick={() => {
+                    SetToggle(!toggle);
+                    SetActive(link.title)
+                  }
+                  }
                 >
                   <a href={`#${link.id}`}> {link.title} </a>
                 </li>
