@@ -18,7 +18,7 @@ const Hero = () => {
               text-white-100`}>
             I'm a software developer <br
               className='sm:block hidden' />
-            user inteface and web applications
+            Full Stack
           </p>
         </div>
       </div>
