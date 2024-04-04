@@ -33,7 +33,7 @@ const Hero = () => {
           flex justify-center items-start p-2'>
             <motion.dev
               animate={{
-                y: [0, 10, 0]
+                y: [0, 24, 0]
               }}
               transition={{
                 duration: 1.5,
