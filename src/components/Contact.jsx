@@ -8,6 +8,10 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from "../utils/motion";
 
+//vwg92EUCQObSErUmw   public id cesar
+//template_ztq1job  template id
+//service_45o2www   email services
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,8 +20,44 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
-  const handleChange = (e) => { }
-  const handleSubmit = (e) => { }
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+    //e.preventDefault();
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      'service_45o2www',
+      'template_ztq1job',
+      {
+        from_name: form.name,
+        to_name: 'Cesar',
+        from_email: form.email,
+        to_email: 'cesarmozareyes@gmail.com',
+        message: form.message,
+      },
+      'vwg92EUCQObSErUmw'
+    )
+      .then(() => {
+        setLoading(false);
+        alert('Thank you for your message. I will get back to you as soon as possible.');
+
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        })
+      }, (error) => {
+        setLoading(false);
+        console.log(error);
+        alert('There was an error sending your message. Please try again later.');
+      })
+  }
 
 
   return (
@@ -47,7 +87,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What is your Name"
+              placeholder="What is your Name?"
               className="bg-tertiary py-4 px-6
                placeholder:text-secondary
                text-white rounded-lg outline-none
@@ -86,6 +126,15 @@ const Contact = () => {
                border-none font-medium"
             />
           </label>
+          <button
+            type="submit"
+            className="bg-tertiary py-3 px-8
+            outline-none w-fit text-white
+            font-bold shadow-md shadow-primary
+            rounded-xl"
+          >
+            {loading ? "Sending..." : "Send"}
+          </button>
         </form>
       </motion.div>
 
