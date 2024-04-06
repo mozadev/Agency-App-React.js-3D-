@@ -24,8 +24,7 @@ const ExperienceCard = ({ experience }) => (
         <img
           src={experience.icon}
           alt={experience.company_name}
-          className="w-[60%] h-[60%]
-             object-contain"
+          className="w-[1/2] h-[1/2] object-contain"
         />
       </div>
     }
@@ -80,4 +79,4 @@ const Experience = () => {
   )
 }
 
-export default SectionWrapper(Experience, 'work')
+export default SectionWrapper(Experience, 'experience')
