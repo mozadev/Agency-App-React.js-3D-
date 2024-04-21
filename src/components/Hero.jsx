@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10
+      {/* <div className='absolute xs:bottom-10
       bottom-32 w-full flex justify-center
       items-center'>
         <a href='#work'>
@@ -43,12 +43,10 @@ const Hero = () => {
               className='w-3 h-3 rounded-full
               bg-secondary mb-1'
             />
-
-
           </div>
         </a>
 
-      </div>
+      </div> */}
 
     </section>
   );

@@ -8,7 +8,18 @@ import * as random from 'maath/random/dist/maath-random.esm'
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+  const [sphere] = useState(() => {
+    let positions = random.inSphere(new Float32Array(5000), { radius: 1.2 });
+    // Validar que no haya NaN en las posiciones generadas
+    for (let i = 0; i < positions.length; i++) {
+      if (isNaN(positions[i])) {
+        console.error('Se encontró un valor NaN en las posiciones generadas');
+        // Reemplazar el valor NaN con 0 o alguna otra estrategia adecuada
+        positions[i] = 0;
+      }
+    }
+    return positions;
+  });
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
