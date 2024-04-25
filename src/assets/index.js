@@ -1,4 +1,5 @@
 import logo2 from "./logo2.svg";
+import logo from "./logo.svg";
 import moza from "./moza.svg";
 import logoblack from "./logoblack.svg";
 import backend from "./backend.png";
@@ -35,6 +36,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  logo,
   logo2,
   moza,
   logoblack,
