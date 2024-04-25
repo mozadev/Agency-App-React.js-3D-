@@ -25,11 +25,9 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-secondary`}>
             I'm full stack web developer with a passion for creating
             interactive and responsive web applications using
-            React, Redux, Node.js, Express, Django, PostgreSQL,
+            React, Django, fastAPI, PostgreSQL,
             MySQL, MongoDB, Docker
             and Git.<br className='sm:block hidden' />
-
-
           </p>
         </div>
       </div>
