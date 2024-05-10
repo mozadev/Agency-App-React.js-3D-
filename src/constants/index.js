@@ -208,7 +208,7 @@ const projects = [
     {
         name: "Agency ",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Web-based platform that merge expertise in development with a futuristic vision to offer software solutions that transform businesses. Specialized in blockchain, microservices development with Django REST Framework, and web platforms using React and Next.js..",
         tags: [
             {
                 name: "React.js",
