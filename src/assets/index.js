@@ -30,6 +30,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import pionier from "./company/pionier.png";
 import unfv from "./company/unfv.png";
+import hitss from "./company/hitss.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -67,6 +68,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  hitss,
   pionier,
   unfv,
 };
