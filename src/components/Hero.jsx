@@ -24,10 +24,10 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-secondary`}>
             I'm a full-stack web developer building interactive, 
-            reliable apps with React  and Python (FastAPI/Django).
+            reliable apps with React and Python (FastAPI/Django).
              I focus on clean architecture, secure REST APIs
             (JWT, pagination, validation) and data-driven features.
-            and Git.<br className='sm:block hidden' />
+            <br className='sm:block hidden' />
           </p>
         </div>
       </div>
