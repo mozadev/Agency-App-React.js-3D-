@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    hitss,
     pionier,
     unfv,
 } from "../assets";
@@ -121,59 +122,41 @@ const technologies = [
 const experiences = [
 
 
-
     {
-        title: "React.js Developer",
-        company_name: "Unfv",
-        icon: unfv,
+        title: "Full Stack Developer",
+        company_name: "Hitss Peru",
+        icon: hitss,
         iconBg: "#383E56",
-        date: "March 2020 - March 2023",
+        date: "October 2024 - Present",
         points: [
-            "Developing and maintaining web applications using React.js, MongoDB, FastAPI and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Built REST APIs with FastAPI and backend ETL modules (ingest → transform → load) consumed by a React + TypeScript dashboard.",
+            "Implemented Celery + Redis (retries, scheduling, results) and WebSockets for per-device/process live progress with RBAC (role-based access control using JWT/permissions).",
+            "Network Patch Orchestrator (UI + API): Excel uploads, batch execution, real-time tracking, validations and exports.",
+            "Validation Portal: Word/Excel ingestion and rule-based comparisons with data quality gates, job tracking and notifications.",
+            "Impact: 70–80% cycle-time reduction and ~90% fewer manual errors; reporting improved from daily to hourly.",
+            "Selenium automations (SharePoint): logged in, navigated portals and downloaded reports; scheduled jobs with retries.",
+            "Backend ETL (Python/pandas): ingested those reports plus Excel, then cleaned/normalized and merged datasets; validations; loaded into PostgreSQL for Analytics.",
+            "Desktop ERP extraction (pywinauto): orchestrated as modular ETLs in the backend and triggered from the dashboard with role-based permissions (RBAC); frontend consumed results and enabled report downloads.",
+            "Deployments: Docker + Nginx with CI pipelines (GitLab/GitHub Actions), basic hardening and 12-Factor config.",
+            "Stack: React, TypeScript, MUI, Highcharts, FastAPI, Django, Celery, Redis, PostgreSQL, WebSockets, Selenium, pywinauto, pandas, Docker, Nginx, CI/CD.",
         ],
     },
-    // {
-    //     title: "",
-    //     company_name: "",
-    //     icon: tesla,
-    //     iconBg: "#E6DEDD",
-    //     date: "Jan 2021 - Feb 2022",
-    //     points: [
-    //         "Developing and maintaining web applications using React.js and other related technologies.",
-    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         "Participating in code reviews and providing constructive feedback to other developers.",
-    //     ],
-    // },
+
     {
         title: "Web Developer",
         company_name: "Pionier",
         icon: pionier,
         iconBg: "#383E56",
-        date: "March 2023 - Present",
+        date: "March 2023 - Octubre 2024",
         points: [
-            "Developing and maintaining web applications using React.js, Django, PostgreSQL and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Modeled multi-table datasets and exposed REST endpoints in Python (FastAPI) for operational reports with filters/pagination and validations.",
+            "Built React + TypeScript (MUI) dashboards/forms for Textile Visual Control, Dispatch Plan, Real Lead Time per area/order, and Yarn Lot Quality (parameters, states, search).",
+            "Implemented RBAC and business rules (e.g., block barcode reads for past operations) and backend ETLs (pandas/openpyxl) to clean/normalize/merge data into PostgreSQL and Excel exports.",
+            "Maintained domain catalogs/rules (e.g., fabric families 315/316, curve distribution, sample-order unlink) and shipped with Docker + CI/CD.",
+            "Stack: Python (FastAPI), SQL/PostgreSQL, React, TypeScript, MUI, pandas, Docker, Git.",
         ],
     },
-    // {
-    //     title: "Full stack Developer",
-    //     company_name: "Meta",
-    //     icon: meta,
-    //     iconBg: "#E6DEDD",
-    //     date: "Jan 2023 - Present",
-    //     points: [
-    //         "Developing and maintaining web applications using React.js and other related technologies.",
-    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         "Participating in code reviews and providing constructive feedback to other developers.",
-    //     ],
-    // },
+
 ];
 
 const testimonials = [
