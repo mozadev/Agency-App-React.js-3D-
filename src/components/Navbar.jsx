@@ -28,9 +28,9 @@ const Navbar = () => {
           h-20  object-contain' />
           <p className='text-green text-[18px]
           font-bold cursor-pointer flex'>  &nbsp; <span
-              className='sm:block hidden'> Software Engineer|
-               (Full-Stack) | React | Python (FastAPI/Django | 
-               Data - Driven Celery, redis | AWS | GCP |
+              className='sm:block hidden'> Software Engineer |
+                Full-Stack| React | Python (FastAPI/Django) | 
+                Data - Driven Celery, redis | AWS | GCP |
                 Azure | AI | LangChain | PySpark
             </span>
           </p>
