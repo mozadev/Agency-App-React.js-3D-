@@ -23,10 +23,10 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Cesar Moza</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-secondary`}>
-            I'm full stack web developer with a passion for creating
-            interactive and responsive web applications using
-            React, Django, FastAPI, PostgreSQL,
-            MySQL, MongoDB, Docker
+            I'm a full-stack web developer building interactive, 
+            reliable apps with React  and Python (FastAPI/Django).
+             I focus on clean architecture, secure REST APIs
+            (JWT, pagination, validation) and data-driven features.
             and Git.<br className='sm:block hidden' />
           </p>
         </div>
