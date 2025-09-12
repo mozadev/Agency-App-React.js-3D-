@@ -127,7 +127,7 @@ const experiences = [
         company_name: "Hitss Peru",
         icon: hitss,
         iconBg: "#383E56",
-        date: "October 2024 - Present",
+        date: "October 2023 - Present",
         points: [
             "Built REST APIs with FastAPI and backend ETL modules (ingest → transform → load) consumed by a React + TypeScript dashboard.",
             "Implemented Celery + Redis (retries, scheduling, results) and WebSockets for per-device/process live progress with RBAC (role-based access control using JWT/permissions).",
@@ -143,11 +143,11 @@ const experiences = [
     },
 
     {
-        title: "Web Developer",
+        title: "Full Stack Developer",
         company_name: "Pionier",
         icon: pionier,
         iconBg: "#383E56",
-        date: "March 2023 - Octubre 2024",
+        date: "March 2023 - Octubre 2023",
         points: [
             "Modeled multi-table datasets and exposed REST endpoints in Python (FastAPI) for operational reports with filters/pagination and validations.",
             "Built React + TypeScript (MUI) dashboards/forms for Textile Visual Control, Dispatch Plan, Real Lead Time per area/order, and Yarn Lot Quality (parameters, states, search).",
